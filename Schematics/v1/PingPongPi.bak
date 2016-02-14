@@ -1,0 +1,391 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PingPongPi-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P1
+U 1 1 568C5C48
+P 1500 1550
+F 0 "P1" H 1500 1700 50  0000 C CNN
+F 1 "CONN_01X02" V 1600 1550 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1500 1550 50  0001 C CNN
+F 3 "" H 1500 1550 50  0000 C CNN
+	1    1500 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 568C5CDB
+P 1950 1500
+F 0 "D1" H 1950 1600 50  0000 C CNN
+F 1 "D_Schottky" H 1950 1400 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 1950 1500 50  0001 C CNN
+F 3 "" H 1950 1500 50  0000 C CNN
+	1    1950 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D2
+U 1 1 568C5D07
+P 2200 1750
+F 0 "D2" H 2200 1850 50  0000 C CNN
+F 1 "D_Schottky" H 2200 1650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 2200 1750 50  0001 C CNN
+F 3 "" H 2200 1750 50  0000 C CNN
+	1    2200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENER D3
+U 1 1 568C5D87
+P 2600 1750
+F 0 "D3" H 2600 1850 50  0000 C CNN
+F 1 "ZENER" H 2600 1650 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 2600 1750 50  0001 C CNN
+F 3 "" H 2600 1750 50  0000 C CNN
+	1    2600 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 568C5DC6
+P 2900 1750
+F 0 "R1" V 2980 1750 50  0000 C CNN
+F 1 "R" V 2900 1750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2830 1750 50  0001 C CNN
+F 3 "" H 2900 1750 50  0000 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 568C5DEC
+P 3200 1750
+F 0 "C1" H 3225 1850 50  0000 L CNN
+F 1 "C" H 3225 1650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 3238 1600 50  0001 C CNN
+F 3 "" H 3200 1750 50  0000 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1500 1800 1500
+Wire Wire Line
+	2100 1500 4600 1500
+Wire Wire Line
+	2200 1500 2200 1600
+Wire Wire Line
+	2600 1500 2600 1550
+Connection ~ 2200 1500
+Wire Wire Line
+	2900 1500 2900 1600
+Connection ~ 2600 1500
+Wire Wire Line
+	3200 1500 3200 1600
+Connection ~ 2900 1500
+Wire Wire Line
+	1700 1600 1700 2000
+Wire Wire Line
+	1700 2000 7300 2000
+Wire Wire Line
+	2200 2000 2200 1900
+Wire Wire Line
+	2600 2000 2600 1950
+Connection ~ 2200 2000
+Wire Wire Line
+	2900 2000 2900 1900
+Connection ~ 2600 2000
+Wire Wire Line
+	3200 2000 3200 1900
+Connection ~ 2900 2000
+$Comp
+L GNDPWR #PWR01
+U 1 1 568C5EAC
+P 1750 2000
+F 0 "#PWR01" H 1750 1800 50  0001 C CNN
+F 1 "GNDPWR" H 1750 1870 50  0000 C CNN
+F 2 "" H 1750 1950 50  0000 C CNN
+F 3 "" H 1750 1950 50  0000 C CNN
+	1    1750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 568C5EF6
+P 4200 1800
+F 0 "R3" V 4280 1800 50  0000 C CNN
+F 1 "R" V 4200 1800 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4130 1800 50  0001 C CNN
+F 3 "" H 4200 1800 50  0000 C CNN
+	1    4200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 568C5F51
+P 4200 950
+F 0 "R2" V 4280 950 50  0000 C CNN
+F 1 "R" V 4200 950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4130 950 50  0001 C CNN
+F 3 "" H 4200 950 50  0000 C CNN
+	1    4200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U1
+U 1 1 568C5FE8
+P 4900 1400
+F 0 "U1" H 4850 1600 50  0000 L CNN
+F 1 "LM358" H 4850 1150 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 4900 1400 50  0001 C CNN
+F 3 "" H 4900 1400 50  0000 C CNN
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 568C6045
+P 5100 650
+F 0 "R4" V 5180 650 50  0000 C CNN
+F 1 "R" V 5100 650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5030 650 50  0001 C CNN
+F 3 "" H 5100 650 50  0000 C CNN
+	1    5100 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 568C6095
+P 5100 900
+F 0 "C2" H 5125 1000 50  0000 L CNN
+F 1 "C" H 5125 800 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5138 750 50  0001 C CNN
+F 3 "" H 5100 900 50  0000 C CNN
+	1    5100 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 550  4800 1100
+$Comp
+L +3.3V #PWR02
+U 1 1 568C6237
+P 4300 750
+F 0 "#PWR02" H 4300 600 50  0001 C CNN
+F 1 "+3.3V" H 4300 890 50  0000 C CNN
+F 2 "" H 4300 750 50  0000 C CNN
+F 3 "" H 4300 750 50  0000 C CNN
+	1    4300 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 568C62F0
+P 5900 1400
+F 0 "R5" V 5980 1400 50  0000 C CNN
+F 1 "R" V 5900 1400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5830 1400 50  0001 C CNN
+F 3 "" H 5900 1400 50  0000 C CNN
+	1    5900 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 568C632D
+P 6400 1400
+F 0 "R6" V 6480 1400 50  0000 C CNN
+F 1 "R" V 6400 1400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6330 1400 50  0001 C CNN
+F 3 "" H 6400 1400 50  0000 C CNN
+	1    6400 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 568C636B
+P 6700 1800
+F 0 "C3" H 6725 1900 50  0000 L CNN
+F 1 "C" H 6725 1700 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 6738 1650 50  0001 C CNN
+F 3 "" H 6700 1800 50  0000 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 568C63DD
+P 7000 750
+F 0 "C4" H 7025 850 50  0000 L CNN
+F 1 "C" H 7025 650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 7038 600 50  0001 C CNN
+F 3 "" H 7000 750 50  0000 C CNN
+	1    7000 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 568C642B
+P 8100 1700
+F 0 "R7" V 8180 1700 50  0000 C CNN
+F 1 "R" V 8100 1700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8030 1700 50  0001 C CNN
+F 3 "" H 8100 1700 50  0000 C CNN
+	1    8100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 568C64AA
+P 8100 2100
+F 0 "R8" V 8180 2100 50  0000 C CNN
+F 1 "R" V 8100 2100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 8030 2100 50  0001 C CNN
+F 3 "" H 8100 2100 50  0000 C CNN
+	1    8100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM358 U1
+U 2 1 568C6505
+P 7400 1500
+F 0 "U1" H 7350 1700 50  0000 L CNN
+F 1 "LM358" H 7350 1250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 7400 1500 50  0001 C CNN
+F 3 "" H 7400 1500 50  0000 C CNN
+	2    7400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1400 6250 1400
+Wire Wire Line
+	6550 1400 7100 1400
+Wire Wire Line
+	6700 1650 6700 1400
+Connection ~ 6700 1400
+Wire Wire Line
+	6850 750  6150 750 
+Wire Wire Line
+	6150 750  6150 1400
+Connection ~ 6150 1400
+Wire Wire Line
+	7700 1500 8400 1500
+Wire Wire Line
+	8100 750  8100 1550
+Wire Wire Line
+	8100 1850 8100 1950
+Wire Wire Line
+	8100 1900 7000 1900
+Wire Wire Line
+	7000 1900 7000 1600
+Wire Wire Line
+	7000 1600 7100 1600
+Connection ~ 8100 1900
+Wire Wire Line
+	8100 2250 8100 2300
+Wire Wire Line
+	8100 2300 6700 2300
+Wire Wire Line
+	6700 2300 6700 1950
+Wire Wire Line
+	7150 750  8100 750 
+Connection ~ 8100 1500
+$Comp
+L CONN_01X01 P2
+U 1 1 568C684C
+P 8600 1500
+F 0 "P2" H 8600 1600 50  0000 C CNN
+F 1 "CONN_01X01" V 8700 1500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01" H 8600 1500 50  0001 C CNN
+F 3 "" H 8600 1500 50  0000 C CNN
+	1    8600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 750  4200 800 
+Connection ~ 3200 1500
+Wire Wire Line
+	5200 1400 5750 1400
+Wire Wire Line
+	4200 750  4800 750 
+Connection ~ 4300 750 
+Wire Wire Line
+	4950 650  4900 650 
+Wire Wire Line
+	4900 650  4900 900 
+Wire Wire Line
+	4900 900  4950 900 
+Wire Wire Line
+	5250 650  5300 650 
+Wire Wire Line
+	5300 650  5300 1400
+Wire Wire Line
+	5300 900  5250 900 
+Connection ~ 5300 1400
+Connection ~ 5300 900 
+Wire Wire Line
+	4550 850  4900 850 
+Connection ~ 4900 850 
+Wire Wire Line
+	4200 2000 4200 1950
+Connection ~ 3200 2000
+Wire Wire Line
+	4800 2000 4800 1700
+Connection ~ 4200 2000
+Wire Wire Line
+	4200 1100 4200 1650
+Wire Wire Line
+	4200 1300 4600 1300
+Connection ~ 4200 1300
+Wire Wire Line
+	4550 850  4550 1500
+Connection ~ 4550 1500
+Connection ~ 6700 2000
+Connection ~ 4800 2000
+Wire Wire Line
+	7300 2000 7300 1800
+Wire Wire Line
+	4800 550  7300 550 
+Wire Wire Line
+	7300 550  7300 1200
+Connection ~ 4800 750 
+$EndSCHEMATC
