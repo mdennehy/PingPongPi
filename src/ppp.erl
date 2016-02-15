@@ -1,4 +1,3 @@
-#!/usr/bin/env escript
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Ping Pong Pi
 %% Table Tennis tracking software
@@ -26,7 +25,8 @@ start() ->
 %%	main()
 
 main(ADC1) ->
-  i2c:read(ADC1,2),
+  Data = i2c:read(ADC1,2),
+  lists:foreach(fun(T) -> io:format("~.16w~n",[T]) end, Data),
   main(ADC1).
 	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
